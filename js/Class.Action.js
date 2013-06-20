@@ -1,17 +1,17 @@
 (function(){
-	Z.Action=function(rel){
+	OOPJS.Action=function(rel){
 		this.name="Action";
 		/**
 		 * private function: not extendable
 		 */
-		Z.Action.test=function(){
+		OOPJS.Action.test=function(){
 			console.log('test prv in Action');
 		};
 		/**
 		 * public function: not extendable
 		 */
 		this.sayHello=function(){
-			conslole.log('hello in Action');
+			console.log('hello in Action');
 		};
 		
 	};
@@ -19,7 +19,7 @@
 	/**
 	 * extendable container
 	 */
-	Z.Action.prototype={
+	OOPJS.Action.prototype={
 			/**
 			 * public function: extendable
 			 */
@@ -31,7 +31,7 @@
 			 * privileged function: extendable
 			 */
 			testPrivileged:function(){
-				Z.Action.test();
+				OOPJS.Action.test();
 			},
 	};
 	

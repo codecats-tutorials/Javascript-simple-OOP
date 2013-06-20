@@ -1,6 +1,9 @@
-var Z={};//namespace
+/**
+ * namespace and extending function
+ */
+var OOPJS={};
 (function(){
-	Z.Extend=function(child, parent){
+	OOPJS.Extend=function(child, parent){
 		for(var i in parent.prototype){
 			if(!(i in child.prototype)){
 				child.prototype[i]=parent.prototype[i];
