@@ -2,7 +2,11 @@
 	OOPJS.Action=function(rel){
 		this.name="Action";
 		/**
-		 * private function: not extendable
+		 * private field: not extendable, no privileged
+		 */
+		var relLink=rel;
+		/**
+		 * private function: not extendable could be privileged
 		 */
 		OOPJS.Action.test=function(){
 			console.log('test prv in Action');
@@ -31,6 +35,7 @@
 			 * privileged function: extendable
 			 */
 			testPrivileged:function(){
+				
 				OOPJS.Action.test();
 			},
 	};

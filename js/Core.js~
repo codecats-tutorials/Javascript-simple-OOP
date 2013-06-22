@@ -9,6 +9,6 @@ var OOPJS={};
 				child.prototype[i]=parent.prototype[i];
 			}
 		}
-		child.prototype['uber']=parent.prototype;
+		child.prototype.uber=parent.prototype;
 	};
 })();
